@@ -1,39 +1,38 @@
--- Create customer master table
+-- Create Customers table
 CREATE TABLE Customers (
     CustomerID INT PRIMARY KEY,
     FirstName VARCHAR(50),
     LastName VARCHAR(50),
     Gender VARCHAR(10),
-    DateOfBirth DATE,
-    AccountOpenDate DATE,
-    AccountStatus VARCHAR(20)
+    BirthDate DATE,
+    RegistrationDate DATE
 );
 
--- Create transactions table
+-- Create Products table
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(100),
+    Category VARCHAR(50),
+    Price DECIMAL(10,2)
+);
+
+-- Create Transactions table
 CREATE TABLE Transactions (
     TransactionID INT PRIMARY KEY,
     CustomerID INT,
+    ProductID INT,
     TransactionDate DATE,
-    TransactionAmount DECIMAL(10,2),
-    TransactionType VARCHAR(20),
-    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+    Quantity INT,
+    TotalAmount DECIMAL(10,2),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
 );
 
--- Create churn table
-CREATE TABLE Churn (
-    CustomerID INT PRIMARY KEY,
-    ChurnFlag BIT, -- 1 = churned, 0 = active
-    ChurnDate DATE,
-    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
-);
-
--- Optional: Create staging table for raw data ingestion
-CREATE TABLE Staging_Customers (
+-- Optional staging table for raw data ingestion
+CREATE TABLE Staging_Transactions (
     CustomerID INT,
-    FirstName VARCHAR(50),
-    LastName VARCHAR(50),
-    Gender VARCHAR(10),
-    DateOfBirth DATE,
-    AccountOpenDate DATE,
-    AccountStatus VARCHAR(20)
+    ProductID INT,
+    TransactionDate DATE,
+    Quantity INT,
+    TotalAmount DECIMAL(10,2)
 );
