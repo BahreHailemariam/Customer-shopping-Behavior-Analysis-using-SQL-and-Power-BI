@@ -21,3 +21,28 @@ The solution provides insights into:
 - Seasonal and category trends
 
 This project is ideal for retail, e-commerce, and marketplace teams aiming to improve **customer segmentation**, **inventory planning**, and **marketing strategy**.
+
+## 🎯 Objectives
+
+- Build a clear SQL-based data model for behavioral analysis
+
+- Create reusable SQL scripts for metrics such as RFM, repeat purchase rate, and conversion
+
+- Produce an interactive Power BI dashboard for decision-making
+
+- Visualize key KPIs: revenue, customers, categories, products, and trends
+
+- Detect anomalies and shopping patterns
+
+## 🧱 Project Architecture
+
+```pgsql
+
+Raw Data → SQL Preparation → Feature Engineering → Analytics Tables → Power BI Dashboard
+
+```
+
+## 📂 Folder Structure
+
+
+
