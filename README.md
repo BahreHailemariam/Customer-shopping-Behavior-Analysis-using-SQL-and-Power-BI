@@ -137,3 +137,41 @@ Tracks customer return patterns over time.
 
 ## 🧮 Key SQL Metrics
 ### 🧾 Revenue & Order Metrics
+
+```sql
+SELECT 
+    SUM(order_total) AS total_revenue,
+    COUNT(order_id) AS total_orders,
+    AVG(order_total) AS avg_order_value
+FROM orders;
+```
+
+### 👥 Customer Metrics
+
+```sql
+SELECT 
+    COUNT(DISTINCT customer_id) AS active_customers,
+    SUM(CASE WHEN order_count > 1 THEN 1 END) * 1.0 
+           / COUNT(DISTINCT customer_id) AS repeat_rate
+FROM (
+    SELECT customer_id, COUNT(order_id) AS order_count
+    FROM orders
+    GROUP BY customer_id
+);
+```
+
+### 🧺 Market Basket (Affinity Rules)
+
+```sql
+-- Example: item co-occurrence matrix
+SELECT 
+    a.product_id AS product_a,
+    b.product_id AS product_b,
+    COUNT(*) AS frequency
+FROM order_items a
+JOIN order_items b 
+    ON a.order_id = b.order_id AND a.product_id <> b.product_id
+GROUP BY product_a, product_b;
+```
+## 📊 Power BI Dashboard Overview
+### Pages Included
