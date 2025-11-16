@@ -176,7 +176,7 @@ GROUP BY product_a, product_b;
 ## 📊 Power BI Dashboard Overview
 ### Pages Included
 
-### 1️⃣ Sales Overview
+**1️⃣ Sales Overview**
 
 - Total Revenue, AOV, Orders
 
@@ -186,7 +186,7 @@ GROUP BY product_a, product_b;
 
 - Customer Acquisition Trend
 
-### 2️⃣ Customer Insights
+**2️⃣ Customer Insights**
 
 - RFM Segments
 
@@ -194,7 +194,7 @@ GROUP BY product_a, product_b;
 
 - Repeat purchase patterns
 
-### 3️⃣ Product Analytics
+**3️⃣ Product Analytics**
 
 - SKU-level profitability
 
@@ -202,7 +202,7 @@ GROUP BY product_a, product_b;
 
 - Product affinity heatmap
 
-### 4️⃣ Basket Analysis
+**4️⃣ Basket Analysis**
 
 - Market Basket Lifts & Associations
 
@@ -210,7 +210,7 @@ GROUP BY product_a, product_b;
 
 - Category relationships
 
-### 5️⃣ Cohort & Retention
+**5️⃣ Cohort & Retention**
 
 - Weekly/Monthly cohorts
 
@@ -218,7 +218,7 @@ GROUP BY product_a, product_b;
 
 - Active customers over time
 
-### 6️⃣ KPI Monitoring
+**6️⃣ KPI Monitoring**
 
 - Daily/Weekly performance
 
@@ -226,5 +226,6 @@ GROUP BY product_a, product_b;
 
 - Low-stock or low-conversion alerts
 
-📁 _See full dashboard spec
+### 📁 _See full dashboard spec
 `dashboard/PowerBI_Report_Spec.md`
+## 🧾 Sample DAX Measures
