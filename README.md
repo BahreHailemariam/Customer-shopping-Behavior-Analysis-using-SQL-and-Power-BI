@@ -226,6 +226,68 @@ GROUP BY product_a, product_b;
 
 - Low-stock or low-conversion alerts
 
-### 📁 _See full dashboard spec
+#### 📁 _See full dashboard spec
 `dashboard/PowerBI_Report_Spec.md`
 ## 🧾 Sample DAX Measures
+
+```DAX
+Total Revenue = SUM(orders[order_total])
+
+AOV = DIVIDE([Total Revenue], COUNT(orders[order_id]))
+
+Repeat Customer Rate =
+VAR Repeaters = 
+    CALCULATE(DISTINCTCOUNT(orders[customer_id]), orders[order_count] > 1)
+RETURN
+    DIVIDE(Repeaters, DISTINCTCOUNT(customers[customer_id]))
+```
+
+## 🚀 How to Run the Project
+**1️⃣ Load Raw Data**
+
+Place source CSV files in:
+
+```dash
+data/raw/
+```
+**2️⃣ Execute SQL Scripts**
+
+Run each script in sequence against PostgreSQL, MySQL, SQL Server, or SQLite.
+
+Example (SQLite):
+```bash
+sqlite3 shopping.db < sql/01_create_tables.sql
+```
+
+**3️⃣ Build Final Views**
+
+Use:
+```pgsql
+
+06_views_for_powerbi.sql
+```
+to create analytical views for Power BI.
+
+**4️⃣ Load into Power BI**
+
+- Connect to database (SQLite, Postgres, etc.)
+
+- Import analytical views
+
+- Build visuals or use supplied PBIX template
+
+  ## 🌟 Key Skills Demonstrated
+
+- Advanced **SQL modeling** (CTEs, window functions, joins, aggregation)
+
+- **Market-basket analysis** using item co-occurrence
+
+- **RFM segmentation** for personalization
+
+- **Power BI dashboards** with DAX KPIs
+
+- Data cleaning & transformation for retail analytics
+
+- Designing scalable analytics workflows
+
+  
