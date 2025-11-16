@@ -71,3 +71,13 @@ Customer_Shopping_Behavior/
 
 ```
 
+## 🗄️ Data Model
+### Tables Used
+
+| Table           | Description                               |
+| --------------- | ----------------------------------------- |
+| **customers**   | Demographics and registration info        |
+| **orders**      | Order-level details (date, status, total) |
+| **products**    | Product category, price, metadata         |
+| **order_items** | Item-level transaction data               |
+| **calendar**    | Date dimension for trend analysis         |
