@@ -290,4 +290,16 @@ to create analytical views for Power BI.
 
 - Designing scalable analytics workflows
 
-  
+## 📌 Future Enhancements
+
+- Add predictive modeling (CLV prediction, churn risk)
+
+- Forecasting using Prophet or Power BI built-in AI visuals
+
+- Add REST API for live dashboard refresh
+
+- Integrate customer reviews for sentiment analysis  
+
+## 🙌 Contributing
+
+Pull requests and suggestions are welcome.
