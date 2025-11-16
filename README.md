@@ -95,7 +95,7 @@ Customer_Shopping_Behavior/
 - Creating a clean customer lookup table
 
 ## 🧠 Analytical Components
-✔ 1. RFM Analysis (Recency, Frequency, Monetary)
+✔ **1. RFM Analysis (Recency, Frequency, Monetary)**
 
 SQL segments customers into actionable groups:
 
@@ -109,7 +109,7 @@ SQL segments customers into actionable groups:
 
 - New customers
 
-✔ 2. Product Performance
+✔ **2. Product Performance**
 
 - Revenue contribution
 
@@ -117,20 +117,23 @@ SQL segments customers into actionable groups:
 
 - Margin analysis (if cost available)
 
-✔ 3. Basket Analysis / Market Basket
+✔ **3. Basket Analysis / Market Basket**
 
 - Detect product affinities such as:
 
 - Customers who buy Coffee → also buy Cookies (62% lift)
 
-✔ 4. Cohort Retention Analysis
+✔ **4. Cohort Retention Analysis**
 
 Tracks customer return patterns over time.
 
-✔ 5. Category & Seasonal Trends
+✔ **5. Category & Seasonal Trends**
 
 - Month-over-month growth
 
 - Most profitable categories
 
 - Promo impact analysis
+
+## 🧮 Key SQL Metrics
+### 🧾 Revenue & Order Metrics
