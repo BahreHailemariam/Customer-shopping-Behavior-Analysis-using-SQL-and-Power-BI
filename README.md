@@ -276,7 +276,7 @@ to create analytical views for Power BI.
 
 - Build visuals or use supplied PBIX template
 
-  ## 🌟 Key Skills Demonstrated
+## 🌟 Key Skills Demonstrated
 
 - Advanced **SQL modeling** (CTEs, window functions, joins, aggregation)
 
