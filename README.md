@@ -44,5 +44,30 @@ Raw Data → SQL Preparation → Feature Engineering → Analytics Tables → Po
 
 ## 📂 Folder Structure
 
+```
 
+Customer_Shopping_Behavior/
+│
+├── data/
+│   ├── raw/                      # Customer, orders, products, transactions CSVs
+│   └── processed/                # Cleaned & transformed tables
+│
+├── sql/
+│   ├── 01_create_tables.sql      # Schema creation
+│   ├── 02_cleaning.sql           # Data cleaning, missing values, formatting
+│   ├── 03_rfm_segmentation.sql   # RFM modeling
+│   ├── 04_basket_analysis.sql    # Market-basket & affinity analysis
+│   ├── 05_metrics.sql            # KPIs: revenue, AOV, retention
+│   └── 06_views_for_powerbi.sql  # Final analytics views for Power BI
+│
+├── dashboard/
+│   ├── PowerBI_Report_Spec.md    # Dashboard specs & DAX measures
+│   └── visuals/                  # Screenshots (optional)
+│
+├── docs/
+│   └── Workflow_Spec.md          # Full workflow and data model documentation
+│
+└── README.md                     # Project documentation (this file)
+
+```
 
