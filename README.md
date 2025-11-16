@@ -175,3 +175,56 @@ GROUP BY product_a, product_b;
 ```
 ## 📊 Power BI Dashboard Overview
 ### Pages Included
+
+### 1️⃣ Sales Overview
+
+- Total Revenue, AOV, Orders
+
+- MoM Revenue Trend
+
+- Top Categories & Products
+
+- Customer Acquisition Trend
+
+### 2️⃣ Customer Insights
+
+- RFM Segments
+
+- Customer lifecycle funnel
+
+- Repeat purchase patterns
+
+### 3️⃣ Product Analytics
+
+- SKU-level profitability
+
+- Return rate (if available)
+
+- Product affinity heatmap
+
+### 4️⃣ Basket Analysis
+
+- Market Basket Lifts & Associations
+
+- Customers who bought X also bought Y
+
+- Category relationships
+
+### 5️⃣ Cohort & Retention
+
+- Weekly/Monthly cohorts
+
+- Retention curves
+
+- Active customers over time
+
+### 6️⃣ KPI Monitoring
+
+- Daily/Weekly performance
+
+- Revenue anomalies
+
+- Low-stock or low-conversion alerts
+
+📁 _See full dashboard spec
+`dashboard/PowerBI_Report_Spec.md`
